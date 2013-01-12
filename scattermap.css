@@ -1,0 +1,15 @@
+body{
+  background: -webkit-gradient(linear, left top, left bottom, from(#B0D0F0), color-stop(0.25, #F0F0F0), color-stop(0.85, #F0F0F0), to(#B0D0F0));
+  background: -moz-linear-gradient(top, #B0D0F0 0%, #F0F0F0 25%, #F0F0F0 75%, #B0D0F0);
+}
+text{
+  font: 10px sans-serif;
+}
+.dot{
+  stroke: #000;
+}
+.axis path, .axis line{
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
