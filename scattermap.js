@@ -60,15 +60,29 @@ svg.append("text")
 
 // approximate centroid = average point
 var centroid = function(poly, mytimer, time_end){
-  var pts=poly.coordinates[0];
   var x = 0;
   var y = 0;
-  for(var p=0;p<pts.length-1;p++){
-    x += pts[p][0] * 1.0;
-    y += pts[p][1] * 1.0;
+  if(poly.type == "Polygon"){
+    var pts=poly.coordinates[0];
+    for(var p=0;p<pts.length-1;p++){
+      x += pts[p][0] * 1.0;
+      y += pts[p][1] * 1.0;
+    }
+    x /= pts.length - 1;
+    y /= pts.length - 1;
   }
-  x /= pts.length - 1;
-  y /= pts.length - 1;
+  else{
+    var polys=poly.coordinates[0];
+    for(var e=0;e<polys.length;e++){
+      var pts=polys[e];
+      for(var p=0;p<pts.length-1;p++){
+        x += pts[p][0] * 1.0;
+        y += pts[p][1] * 1.0;
+      }
+      x /= pts.length - 1;
+      y /= pts.length - 1;
+    }
+  }
   if(mytimer || time_end){
     return [ (x - ctrlng) * mytimer / time_end + ctrlng, (y - ctrlat) * mytimer / time_end + ctrlat ];
   }

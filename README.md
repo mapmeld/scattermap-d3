@@ -20,7 +20,7 @@ D3 reads data from a GeoJSON file to place the dots, the map, and the scattered 
        ...
     });
 
-The axes and scale of the scatter plot, color codes, and other details are writte in JavaScript.
+The axes and scale of the scatter plot, color codes, and other details are written in JavaScript.
 
 The GeoJSON has the sale price and sale date for each parcel. Creating and positioning a dot for each parcel:
 
