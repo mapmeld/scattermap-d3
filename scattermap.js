@@ -100,7 +100,8 @@ d3.json("savannahs3.geojson", function(err, parcels) {
     .data(parcels.features).enter()
     .append("path")
     .attr("d", geopath.projection( d3.geo.mercator().scale(geoscale).center([ctrlng, ctrlat]) ) )
-    .style("fill", function(d) { return color(d); });
+    .style("fill", function(d) { return color(d); })
+    .style("stroke", "#fff");
 
   // Add a dot per parcel. Colored by decades
   var dot = svg.append("g")
