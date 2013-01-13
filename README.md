@@ -78,13 +78,8 @@ To instantly snap the parcels to their dots, you can run the code to re-center a
 
       // get the matching dot
       var matchCircle = svg.select(".d" + d.id);
-
-      // parcels outside graph boundaries (cy=Infinity) are relocated
-      if(matchCircle.attr("cy") == Infinity){
-        return "translate(" + (matchCircle.attr("cx") - 480) + ",-250)";
-      }
       
-      // parcels within graph boundaries
+      // use translate
       return translate(" + (matchCircle.attr("cx") - 480) + "," + (matchCircle.attr("cy") - 250) + ")";
     });
 
@@ -105,9 +100,6 @@ Animating these processes together is cooler:
       // move parcel's 0,0 coordinate to its dot's location * ( timer / timer_end )
       parcelgeos.attr("transform", function(d) {
         var matchCircle = svg.select(".d" + d.id);
-        if(matchCircle.attr("cy") == Infinity){
-          return "translate(" + (matchCircle.attr("cx") - 480) * timer / timer_end + "," + -250 * timer / timer_end + ")";
-        }
         return "translate(" + (matchCircle.attr("cx") - 480) * timer / timer_end + "," + (matchCircle.attr("cy") - 250) * timer / timer_end + ")";
       });
       
