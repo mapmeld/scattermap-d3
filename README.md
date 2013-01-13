@@ -4,11 +4,11 @@ ScatterMap-D3 turns a GeoJSON file into a map and scatter plot animation.
 
 In the first phase, you see a scatter plot of dots representing price / year. There is also a map, color-coded by the decade that a parcel was last sold.
 
---
+<img src="https://raw.github.com/mapmeld/scattermap-d3/gh-pages/phase1.png"/>
 
 The map then animates. Each parcel moves to its matching dot in the scatter plot.
 
---
+<img src="https://raw.github.com/mapmeld/scattermap-d3/gh-pages/phase2.png"/>
 
 The data in this demo, from <a href="http://www.thempc.org/SAGIS.htm" target="_blank">SAGIS</a>, is the most recent sale year and sale price of parcels in downtown Savannah, Georgia (before January 2011).
 
