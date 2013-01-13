@@ -47,7 +47,7 @@ svg.append("text")
     .attr("text-anchor", "end")
     .attr("x", width)
     .attr("y", height - 6)
-    .text("most recent sale");
+    .text("most recent sale (before Jan 2011)");
 
 // Add a y-axis label.
 svg.append("text")
@@ -56,7 +56,7 @@ svg.append("text")
     .attr("y", 6)
     .attr("dy", ".75em")
     .attr("transform", "rotate(-90)")
-    .text("sale price");
+    .text("sale price (Source SAGIS)");
 
 // approximate centroid = average point
 var centroid = function(poly, mytimer, time_end){
