@@ -177,7 +177,7 @@ d3.json("savannahs3.geojson", function(err, parcels) {
     }, 50);
   };
   setTimeout(transition_to_chart, 1000);
-  setTimeout(transition_to_map, 17000);
+  setTimeout(transition_to_map, 14000);
 
   // Positions the dots based on data.
   function position(dot) {
