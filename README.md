@@ -10,6 +10,11 @@ The map then animates. Each parcel moves to its matching dot in the scatter plot
 
 <img src="https://raw.github.com/mapmeld/scattermap-d3/gh-pages/phase2.png"/>
 
+<h3><a href="http://mapmeld.github.com/scattermap-d3">Original Demo</a></h3>
+
+<h3><a href="http://mapmeld.github.com/scattermap-d3/indexb.html">2x Parcels Demo</a></h3>
+
+
 The data in this demo, from <a href="http://www.thempc.org/SAGIS.htm" target="_blank">SAGIS</a>, is the most recent sale year and sale price of parcels in downtown Savannah, Georgia (before January 2011).
 
 ## How does it work?
